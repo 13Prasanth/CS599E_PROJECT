@@ -1,0 +1,88 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the background image */
+body {
+    background-image: url('a.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the menu bar */
+.menu {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    float: left;
+    border-right: 1px solid white; /* Add white border between menu items */
+}
+
+.menu ul li:last-child {
+    border-right: none; /* Remove border from the last menu item */
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white on hover */
+}
+
+/* Style for the content */
+.content {
+    padding: 20px;
+    margin-top: 80px; /* Ensure content is below the fixed menu bar */
+    text-align: center;
+    color: white;
+}
+
+/* Style for buttons */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Center align elements */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
